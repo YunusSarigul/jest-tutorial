@@ -1,0 +1,34 @@
+{
+    "baseUrl": "https://jsonplaceholder.typicode.com",
+    "post":{
+        "getAllPosts":{
+            "path": "posts",
+            "id": 1
+        },
+        "getPostByPostId":{
+            "path": "posts/%1$s",
+            "id": 2,
+            "title": "qui est esse"
+        },
+        "getPostByUserId" : {
+            "path": "posts?userId=%1$i",
+            "userId": 1,
+            "size": 10
+        },
+        "updateTitleUsingId": {
+            "path": "posts/%1$i",
+            "title": "jest-test-title",
+            "body": "jest-test-body",
+            "userId": 19,
+            "id": 1
+        },
+        "createNewPost": {
+            "path": "posts?title=%1$s&body=%2$s&userId=%3$i",
+            "title": "jest-test-title",
+            "body": "jest-test-body",
+            "userId": 19,
+            "id": 1
+        }
+        
+    }
+}

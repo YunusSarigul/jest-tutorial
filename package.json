@@ -1,0 +1,30 @@
+{
+  "name": "jest-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint tests",
+    "test:test": "NODE_ENV=test jest",
+    "test:stage": "NODE_ENV=stage jest",
+    "test:prod": "NODE_ENV=prod jest",
+    "wtest:test": "set NODE_ENV=test&& jest",
+    "wtest:stage": "set NODE_ENV=stage&& jest",
+    "wtest:prod": "set NODE_ENV=prod&& jest",
+    "wtest:stageone": "set NODE_ENV=stage&& jest tests/user.int.spec.js"
+  },
+  "author": "yunus",
+  "license": "ISC",
+  "dependencies": {
+    "frisby": "2.1.2"
+  },
+  "devDependencies": {
+    "config": "^3.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "frisby": "^2.1.1",
+    "jest": "^24.7.1",
+    "lodash": "^4.17.11",
+    "sprintf-js": "^1.1.2"
+  }
+}
